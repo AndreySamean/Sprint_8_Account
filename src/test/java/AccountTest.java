@@ -18,6 +18,7 @@ public class AccountTest {
     }
 
     @ParameterizedTest(name = "{0}")
+    @DisplayName("Invalid name can not be printed")
     @CsvSource({"Имя без пробела, 'ТимотиШаламе'",
             "Пробел в начале, ' Тимоти Шаламе'",
             "Пробел в конце, 'ТимотиШаламе '",
